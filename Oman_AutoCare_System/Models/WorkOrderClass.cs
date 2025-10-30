@@ -1,6 +1,7 @@
 ﻿using Oman_AutoCare_System.Enums;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace Oman_AutoCare_System.Models
 {
     public class WorkOrderClass
     {
+        [Key]
         public int WorkOrder_ID { get; set; }
         public DateOnly Date { get; set; }
         public Status status { get; set; }

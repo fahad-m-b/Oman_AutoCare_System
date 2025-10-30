@@ -14,5 +14,11 @@ namespace Oman_AutoCare_System.Models
         public string Name { get; set; }
         public int estimatedTime { get; set; }
         public decimal Cost { get; set; }
+
+        public List<MechanicClass> Mechanics { get; set; } = new List<MechanicClass>();
+        public void AssignMechanic(MechanicClass mechanic)
+        {
+            Mechanics.Add(mechanic);
+        }
     }
 }
