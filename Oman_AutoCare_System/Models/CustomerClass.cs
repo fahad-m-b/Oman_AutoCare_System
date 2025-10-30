@@ -29,6 +29,7 @@ namespace Oman_AutoCare_System.Models
         public string Street { get; set; } // From composite Address
         public string City { get; set; } // From composite Address
 
-
+        public List<VehicleClass> vehicles { get; set; } = new List<VehicleClass>();
+        public void AddVehicale(VehicleClass vehicle) { vehicles.Add(vehicle); }
     }
 }

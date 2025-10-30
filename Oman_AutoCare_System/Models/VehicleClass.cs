@@ -31,5 +31,13 @@ namespace Oman_AutoCare_System.Models
         //Customer    The navigation property(object reference)                                            //
         //Vehicles The reverse navigation(one-to-many) in CustomerClass                                    //
         //-------------------------------------------------------------------------------------------------//
+
+
+
+
+
+        public void updateLastServiceDate(DateOnly date) {
+            LastServiceTime = date;
+        }
     }
 }

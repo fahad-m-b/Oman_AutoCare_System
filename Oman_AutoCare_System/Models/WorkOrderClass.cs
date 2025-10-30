@@ -16,5 +16,7 @@ namespace Oman_AutoCare_System.Models
         public CustomerClass CustromerCivil_ID { get; set; }
         public VehicleClass Vehicle_PlateNumber { get; set; }
         public MechanicClass Mechanic_ID { get; set; }
+
+
     }
 }
