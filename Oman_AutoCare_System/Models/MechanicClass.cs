@@ -12,7 +12,20 @@ namespace Oman_AutoCare_System.Models
         public int Mechanic_ID { get; set; }
         public string Name { get; set; }
         public string Phone_Number { get; set; }
-        public Specialization Specialization { get; set; }
         public int Experience_Year { get; set; }
+        public List<ServiceClass> Specialization { get; set; } = new List<ServiceClass>();
+        public List<WorkOrderClass> ActiveWorkOrders { get; set; } = new List<WorkOrderClass>();
+
+        public bool CanTakeWorkOrder()
+        {
+            return ActiveWorkOrders.Count < 3;
+        }
+        public void AssignWorkOrder(WorkOrderClass workOrderClass)
+        {
+            if (CanTakeWorkOrder())
+            {
+                ActiveWorkOrders.Add(workOrderClass);
+            }
+        }
     }
 }
