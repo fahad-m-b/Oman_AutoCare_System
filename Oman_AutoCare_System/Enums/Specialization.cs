@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Oman_AutoCare_System.Enums
 {
-    internal class test
+    public class Specialization
     {
     }
 }

@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Oman_AutoCare_System.Models
+namespace Oman_AutoCare_System.Enums
 {
-    internal class test
+    public enum Status
     {
+        Pending,
+        InProgress,
+        Completed
     }
 }
